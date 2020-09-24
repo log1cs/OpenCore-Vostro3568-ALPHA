@@ -11,6 +11,8 @@ About the specs:
  + SSD: 240GB HP S400 SATA3 SSD
  + Display 1366x768
  + Audio: Realtek ALC256 Audio Controller
+ + Intel Dual Band AC-3165
+ + Realtek RTL8111
 
 BUG:
 + Graphics accelerator isn't working until now. Gonna try to fix it asap.
