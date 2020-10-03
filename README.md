@@ -18,3 +18,32 @@ About the specs:
  + Realtek RTL8111
 
  + Since I hasn't fix the graphics yet. You need to use OpenCore with my Clover framebuffer patch or the patch I'm following on Dortania OpenCore Guide.
+
+
+
+
+| Feature | Status | Notes |
+| ------------- | ------------- | ------------- |
+| **Intel iGPU** | Testing | Testing, will be updated soon |
+| **Trackpad I2C ** |  ✅ Working | Full gesture support. Probably the best trackpad experience on a non-mac. | 
+| **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
+| **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this link below |
+| **Built-in Microphone** | ✅ Working |
+| **Webcam** | ✅ Working | Fully working, is detected as Integrated Webcam |
+| **Handoff** | ✅ Working |
+| **Wi-Fi/BT** | ✅ Working | The stock AC3165 Wi-Fi card is working perfectly fine. But I recommend |
+| **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Will patch to disable it. |
+| **SD Reader** | ❌ Not working | The USB2.0 SDCard Reader from Realtek never working on Mac because drivers is only for Windows. Will patch to disable it. |
+
+
+
+
+FOR AUDIO FIXING USE THIS GITHUB REPO AND FOLLOW THE INSTRUCTIONS: 
+https://github.com/hackintosh-stuff/ComboJack
+
+
++ Guide :
+
+1. Delete CodecCommander.kext，put ComboJack_Installer/VerbStub.kext in Clover/kexts/Other
+2. Run ComboJack_Installer/install.sh in terminal and reboot
+3. Done. When you attach a headphone there will be a popup asking about headphone type.
