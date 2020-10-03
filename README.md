@@ -25,7 +25,7 @@ About the specs:
 | Feature | Status | Notes |
 | ------------- | ------------- | ------------- |
 | **Intel iGPU** | Testing | Testing, will be updated soon |
-| **Trackpad I2C ** |  ✅ Working | Full gesture support. Probably the best trackpad experience on a non-mac. | 
+| **Trackpad I2C ** |  ✅ Working | Full gesture support. Probably the not-actually touchpad experience on a non-mac. | 
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
 | **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this link below |
 | **Built-in Microphone** | ✅ Working |
