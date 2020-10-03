@@ -1,3 +1,6 @@
+***** UPDATE: I DON'T USE VOSTRO 3568 ANYMORE SINCE I WAS CHANGED TO XPS 13 2020. I STILL UPDATE THE EFI EVERYDAY WHEN IT COME STABLE. *****
+
+
 OpenCore 0.6.1 for Vostro 3568.
 
 This is a OpenCore-based EFI for Dell Vostro 3568. REMEMBER: THIS IS THE ALPHA VERSION. YOU MIGHT FACE BUG WHILE USING.
@@ -14,5 +17,4 @@ About the specs:
  + Intel Dual Band AC-3165
  + Realtek RTL8111
 
-BUG:
-+ Graphics accelerator isn't working until now. Gonna try to fix it asap.
+ + Since I hasn't fix the graphics yet. You need to use OpenCore with my Clover framebuffer patch or the patch I'm following on Dortania OpenCore Guide.
