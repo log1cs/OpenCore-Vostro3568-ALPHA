@@ -99,7 +99,32 @@ https://github.com/hackintosh-stuff/ComboJack
 
 + Guide :
 
-1. Put ComboJack_Installer/VerbStub.kext in Clover/kexts/Other
+1. Put ComboJack_Installer/VerbStub.kext in OC/kexts
+
+After that, add the following code:
+```xml
+<dict>
+    <key>Arch</key>
+    <string>x86_64</string>
+    <key>BundlePath</key>
+    <string>VerbStub.kext</string>
+    <key>Comment</key>
+    <string>Headphones audio fix injector</string>
+    <key>Enabled</key>
+    <true/>
+    <key>ExecutablePath</key>
+    <string>Contents/MacOS/VerbStub</string>
+    <key>MaxKernel</key>
+    <string></string>
+    <key>MinKernel</key>
+    <string>12.0.0</string>
+    <key>PlistPath</key>
+    <string>Contents/Info.plist</string>
+</dict>
+```
+
+
+Open your config.plist and add this in 
 2. Run ComboJack_Installer/install.sh in terminal and reboot
 3. Done. When you attach a headphone there will be a popup asking about headphone type.
 
